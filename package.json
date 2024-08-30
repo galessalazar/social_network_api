@@ -1,4 +1,9 @@
 {
+  "name": "social_network_app",
+  "main": "connection.js",
+  "scripts": {
+    "start": "node connection"
+  },
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.5.4"

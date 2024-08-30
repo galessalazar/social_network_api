@@ -8,14 +8,13 @@ const {
 } = require('../../controllers/userController');
 
 // api for users
-router.route('/').get(getUsers).post(createUser);
+router.route('/').get(getUsers)
+.post(createUser);
+console.log('mk');
+
 
 // api for user by id
-router.route('/:userId').get(getSingleUserById).delete(deleteUserById);
-
-// i think i could combine these two instead i dont think the below is correct
-
-// api for users who update by id
-router.route('/:userId/updatedUsers').put(updateUserById).delete(updateUserById);
+router.route('/:userId').get(getSingleUserById).put(updateUserById).delete(deleteUserById);
+console.error('wtf');
 
 module.exports = router;

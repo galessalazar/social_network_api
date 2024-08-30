@@ -1,4 +1,4 @@
-const { Schema, model } = require (mongoose);
+const { Schema, model } = require ('mongoose');
 
 
 const userSchema = new Schema({
@@ -28,7 +28,7 @@ const userSchema = new Schema({
       ],
     },
     {
-        toJson: {
+        toJSON: {
             virtuals: true,
         },
         id: false,
@@ -37,4 +37,4 @@ const userSchema = new Schema({
 
 const User = model('User', userSchema);
 
-model.exports = User;
+module.exports = User;
