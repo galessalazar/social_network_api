@@ -14,7 +14,11 @@ console.log('mk');
 
 
 // api for user by id
-router.route('/:userId').get(getSingleUserById).put(updateUserById).delete(deleteUserById);
+router.route('/:userId')
+.get(getSingleUserById)
+.put(updateUserById)
+.delete(deleteUserById);
+
 console.error('wtf');
 
 module.exports = router;

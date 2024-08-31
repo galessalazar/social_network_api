@@ -12,11 +12,11 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        // dont know how to validate the email just yet look up mongoose matching validation
+        match: [ /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, 'Email required' ],
     },
     thoughts: [
          {
-        type: Schema.Types.ObjectId,
+        type: String,
         ref: 'Thought',
     },
     ],
