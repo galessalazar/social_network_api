@@ -2,7 +2,7 @@
   "name": "social_network_app",
   "main": "connection.js",
   "scripts": {
-    "start": "node connection"
+    "start": "node index"
   },
   "dependencies": {
     "express": "^4.19.2",
